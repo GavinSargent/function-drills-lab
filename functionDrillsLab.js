@@ -362,7 +362,7 @@ function allMyChocolate (myMoney){
 }return totalFrogs
 }
 
-console.log(allMyChocolate(myMoney))
+// console.log(allMyChocolate(myMoney))
 
 ////////////////// PROBLEM 20 ////////////////////
 /*
@@ -388,22 +388,23 @@ let sampleArray = [0,1,2,3,4,5,7,6,8,9]
 */
 
 //CODE HERE
-let ascending = 0
 
 function isItAscending (arr){
-  for(i = 0; i < arr.length; i++){
-    for(j = 1; j < arr.length; j++) {
-      if(arr[i] < arr[j] || arr[i] === arr[j]){
-        console.log(true);
-      } else { 
-        console.log(false);
-      } break
-    }
-  }
+  for(let i = 0; i < arr.length; i++){
+    if(i <= arr[i] + 1){
+     
+    } else if (i > arr[i]){
+      return 'It is not ascending'
+    } else {
+      return "It is ascending"
+    } console.log(i)
+  } 
 }
 
 let arrayIsAscending = isItAscending(sampleArray)
 console.log(arrayIsAscending)
+
+
 ////////////////// PROBLEM 22 ////////////////////
 
 let duck = "cute";
