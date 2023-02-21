@@ -371,26 +371,39 @@ console.log(allMyChocolate(myMoney))
 
 //CODE HERE
 
-let myMoney2 = 30
-let totalFrogs2 = 0
-function allMyChocolate (myMoney2){
-  let chocolateFrogCost = 3;
-  while(myMoney2 > 0) {
-    myMoney = myMoney - chocolateFrogCost;
-    totalFrogs2 = totalFrogs2 + 1;
-}return totalFrogs2
-}
+// let myMoney2 = 30
+// let totalFrogs2 = 0
+// function allMyChocolate (myMoney2){
+//   let chocolateFrogCost = 3;
+//   while(myMoney2 > 0) {
+//     myMoney = myMoney - chocolateFrogCost;
+//     totalFrogs2 = totalFrogs2 + 1;
+// }return totalFrogs2
+// }
 
 ////////////////// PROBLEM 21 ////////////////////
-let sampleArray = [0,1,2,3,4,7,5,6,8,9]
+let sampleArray = [0,1,2,3,4,5,7,6,8,9]
 /*
   Write a function that takes in an array of numbers as an argument. In the body of the function, write logic to determine if the array is in ascending order. The function should return true, if it is sorted in ascending order, false if it is not. Create a variable, `arrayIsAscending` and set it equal to your function invoked. Use the sample array to test this function.
 */
 
 //CODE HERE
+let ascending = 0
 
+function isItAscending (arr){
+  for(i = 0; i < arr.length; i++){
+    for(j = 1; j < arr.length; j++) {
+      if(arr[i] < arr[j] || arr[i] === arr[j]){
+        console.log(true);
+      } else { 
+        console.log(false);
+      } break
+    }
+  }
+}
 
-
+let arrayIsAscending = isItAscending(sampleArray)
+console.log(arrayIsAscending)
 ////////////////// PROBLEM 22 ////////////////////
 
 let duck = "cute";
